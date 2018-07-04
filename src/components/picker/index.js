@@ -7,7 +7,7 @@ import React from 'react';
 import {StyleSheet} from 'react-native';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
-import NativePicker from './NativePicker';
+// import NativePicker from './NativePicker';
 import {Colors} from '../../style';
 import {TextInput} from '../inputs';
 import PickerModal from './PickerModal';
@@ -277,7 +277,7 @@ class Picker extends TextInput {
   render() {
     const {useNativePicker, renderPicker, testID} = this.props;
 
-    if (useNativePicker) return <NativePicker {...this.props} />;
+    // if (useNativePicker) return <NativePicker {...this.props} />;
 
     if (_.isFunction(renderPicker)) {
       const {value} = this.state;
